@@ -1,0 +1,435 @@
+
+*{
+    margin:0%;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.frontpage{
+    background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+    
+/* background: rgba(0,0, 0, 0.7) url(./bg.jpg); */
+ background-size: cover; 
+/* background-blend-mode: darken;  */
+
+}
+nav{    
+    background:transparent;
+    display: flex;
+    /* background-color: rgb(240, 230, 230); */
+    position: sticky;
+    top: 0;
+}
+
+  
+.leftNav{
+    width: 50%;
+    font-size: 36px;
+    margin-left: 35px;
+    margin-top: 7px;
+    font-family: "Rakkas", serif;
+ 
+}
+@media (width<=1024px) {
+    .nav{
+        flex-direction: row;
+    }
+}
+
+ul li{
+list-style: none;
+padding: 16px;
+font-size: 19px;
+font-family: "Rakkas", serif;
+}
+ul li:hover{
+    transform: scale(1.2);
+}
+
+ul li a{
+color: black;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color: rgb(37, 27, 175);
+        
+    }
+
+.nav-list{
+    display: flex;
+    /* background-color: blueviolet; */
+    margin-left: 343px;
+}
+#image{
+    height: 250px;
+    width: 220px;
+    margin: auto;
+    display: flex;
+    
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    border: 3px solid #2d2e32;
+    animation: morph 8s ease-in-out infinite;
+    position: relative;
+    transition: all 1s ease-in-out;
+
+    
+}
+@keyframes morph{
+0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+}
+100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+}
+.home{
+    /* background-color: aliceblue; */
+    height: 100vh;
+}
+.home-text{
+    padding: 40px;
+    /* text-align: center; */
+    font-size: large;
+    display: inline-block;
+}
+.text{
+    
+    font-family: "Lilita One", sans-serif;
+     margin-left: 370px;
+    /* font-size: 5em; 
+     letter-spacing: 10px; */
+    /* font-family: monospace; */
+    /* border-right: 5px solid; */
+    width: 60%;
+    white-space:nowrap;
+    overflow: hidden;
+    animation: 
+    typing 10s,
+    cursor 2s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {width:0}
+} 
+.para{
+    margin-left: 160px;
+    text-align: center;
+    /* font-weight: 600; */
+    font-family: "Lilita One", sans-serif;
+}
+.picture{
+    height: 200px;
+    padding: 80px;
+}
+.about{
+    display: flex;
+    height: 100vh;
+    /* background-color:rgb(231, 233, 235) ; */
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
+    
+}
+.about1{
+    width: 50%;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-weight: 600;
+}
+.about2{
+    width:50%;
+  
+   
+}
+.about1 h2{
+
+    margin-top: 100px;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Rakkas", serif;
+ 
+    
+}
+.about2 h2{
+    font-size: 35px;
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Rakkas", serif;
+}
+button{
+    border: 3px solid black;
+    padding: 6px;
+    font-size: 18px;
+    background-color: rgb(204, 206, 226);
+    margin-left: 200px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+.abouttext{
+    font-size: 22px;
+    text-align: justify;
+    line-height: 27px;
+    font-family: "Roboto Condensed", sans-serif;
+    
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.tech{
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 4px 4px;
+    background-color: #d4cece;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+.btn {
+    overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 190px;
+ 
+}
+
+#resume{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid black;
+    color: #2d2e32;
+    cursor: pointer;
+   border-radius: 8px;
+    padding: 10px 10px;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s linear;
+    overflow: hidden;
+}
+#resume::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(61, 27, 216);
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+    z-index: -1;
+    
+
+}
+#resume:hover:before{
+transform: translateX(0);
+
+
+}
+#resume:hover{
+    color: white;
+   
+}
+.projects{
+    
+    height: 100vh;
+    /* background-color: rgb(151, 143, 135); */
+    background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+}
+.project-heading{
+    text-decoration-line: underline;
+    padding-top: 10px;
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Rakkas", serif;
+}
+.project1{
+    /* border: 2px solid black; */
+    height: 33vh;
+    display: flex;
+
+}
+.projectpic{
+width: 50%;
+/* border: 2px solid black; */
+}
+.projectcontent{
+/* border: 2px solid black; */
+    width:50%;
+    margin-top: 15px;
+    text-align: justify;
+    padding-right: 150px;
+    font-size: 19px;
+    font-family:"Roboto Condensed", sans-serif; 
+}
+.projectcontent p{
+    background-color: rgb(168, 159, 146);
+text-align: center;
+font-size: 23px;
+font-weight: 600;
+border: 2px solid black;
+font-family: "Oswald", sans-serif;
+}
+
+.project2{
+    /* border: 2px solid black; */
+    height: 33vh;
+    display: flex;
+}
+.project3{
+    /* border: 2px solid black; */
+    height: 32vh;
+    display: flex;
+   
+}
+.projectpic{
+    margin-left: 200px;
+  }
+#keeper{
+    margin-top: 10px;
+}
+#simongame{
+    margin-top: 0px;
+}
+#traveltracker{
+    margin-top: 0px;
+}
+.projectimg:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+.contactform{
+    height: 100vh;
+}
+.contact1{
+    font-family: "Rakkas", serif;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: rgb(192, 197, 197);
+    height: 50px;
+    /* border: 2px solid red; */
+    font-size: 27px;
+    font-weight: 700;
+}
+
+
+.contact2{
+    height: 500px;
+    padding-top: 40px;
+    /* border: 2px solid black; */
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+}
+.form{
+    background-color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 500px;
+    /* border: 2px solid black; */
+}
+.contactformfield {
+    color: #666;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 0.9rem;
+    display: block;
+    text-align: left;
+    margin-left: 50px;
+    padding: 3px;
+}
+
+.contactforminput {
+    color: #333;
+    padding: 1rem;
+    width: 90%;
+    border: 1px solid #ebebeb;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.contactformlabel {
+    color: #666;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: left;
+}
+#contactbutton{
+
+        width: 12%;
+        padding: 4px 4px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-left: 400px;
+}
+.footercontainer{
+    display: flex;
+    height: 70px;
+    border: 2px solid black;
+}
+.footerbox1{
+width: 50%;
+border: 2px solid black;
+text-align: center;
+padding-top: 40px;
+color: white;
+background-color: black;
+padding-left: 20px;
+
+
+font-family: "Rakkas", serif;
+font-size: 25px;
+
+}
+.footerbox2{
+    border: 2px solid black;
+width: 50%;
+padding-top: 40px;
+padding-left: 880px;
+color: white;
+background-color:black;
+font-size: 25px;
+font-family: "Rakkas", serif;
+
+}
+.footerbox3{
+    height: 30px;
+    border: 2px solid black;
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    background-color: black;
+    font-family: "Rakkas", serif;
+}
+.projectpic{
+    margin-left: 200px;
+}
